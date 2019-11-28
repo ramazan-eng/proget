@@ -1,22 +1,23 @@
 
 
-a = 5;
-console.log(a);
+let money = prompt("Ваш бюджет на месяц?", ''),
+time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
-let arr = ["dad.png","orange.jpg","applee.bmp"];
+let appData = {
+budget: money,
+expenses: {},
+optionalExpenses: {},
+income: [],
+timeData: time,
+savings: false
+};
 
-//alert("Hello world");
-//let kod = alert();
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+a2 = prompt("Во сколько обойдется?", ''),
+a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+a4 = prompt("Во сколько обойдется?", '');
 
-//console.log(typeof(arr[1]));
-let incr = 10,
-    decr = 10;
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-    console.log(++incr);
-    console.log(--decr);
-
-    let isCred = false,
-        isClose = false;
-
-console.log(isCred || !isCred);
-
+alert(appData.budget / 30); 
